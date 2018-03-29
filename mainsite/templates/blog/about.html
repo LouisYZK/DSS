@@ -1,0 +1,106 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block title %}{% endblock %}
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/blog-home.css' %}" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'mainsite:index' %}">Louis Young 主页</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a>关于</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="padding: 20px;"><h1 id="h1-about-me"><a name="About me" class="reference-link"></a><span class="header-link octicon octicon-link"></span>About me</h1><hr>
+        <p><strong>My name is Yang Zhikai(杨智凯),I was born in 1996s.</strong></p>
+        <br>
+        <p><strong>I major in IMIS(Information Management and Information System) at CUG,Hubei Province,China. Though the major itself is more revelent to Data Science,but based on a lot CS technology. So the basic web developing capablility is nessesary for me</strong></p>
+        <p><strong> I started to learn coding in the freshman year of my colleage, from the very start of HTML,CSS and javascript, which are fundemental for future's studying. Then I learn the programming course like C,java and Mysql etc,</strong></p>
+        <p><strong>  I’ll keep on coding and learning. By th way, i am familiar with Python, Mysql, CSS, HTML.etc. </strong></p>
+        <br>
+        <p><strong>In the sapce time, i will read some books, surfing the internet and do some exercise.</strong></p>
+        <hr>
+        <h1 id="h1-contact-me"><a name="Contact me" class="reference-link"></a><span class="header-link octicon octicon-link"></span>Contact me</h1><hr>
+        <ul>
+            <li><strong><a href="https://github.com/LouisYZK" title="Github">Github</a></strong></li>
+            <li><strong>Email: <a href="mailto:yangzhikai2016@cug.edu.cns">yangzhikai2016@cug.edu.cn</a></strong></li>
+        </ul>
+        <hr>
+        <h1 id="h1-suggest-me"><span class="header-link octicon octicon-link"></span>Suggest to me</h1><hr>
+        <form class="form-inline" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            {{ field }}
+            {% endfor %}
+            <br><br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p style="text-align: center;">Copyright &copy; 杨智凯的博客 2018 Powered by Django</p>
+            </div>
+            <!-- /.col-lg-12 -->
+            <div class="col-lg-12" style="text-align: center;">
+                <a href="https://github.com/LouisYZK">Github</a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
+
