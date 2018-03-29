@@ -1,0 +1,177 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+body {
+	/*height: 1000px;*/
+	background: url(../images/bgimg.png) fixed;
+	font: 14px 微软雅黑;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.header {
+	height: 55px;
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.logo {
+	margin: 8px 50px 8px 0px;
+	font: 25px 微软雅黑;
+	color: #FFFFFF;
+}
+
+.nav li {
+	float: left;
+	width: 60px;
+	padding: 0 8px;
+	line-height: 55px;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #848391;
+	
+}
+
+.user li {
+	margin: 0 20px;
+	float: left;
+	font-family: icomoon;
+	font-size: 22px;
+	line-height: 58px;
+}
+
+.user a{
+	color: rgba(255,255,255, .5);
+	text-decoration: none;
+}
+
+.nav a:hover, .user a:hover, .nav .initial {
+	color: #fff;
+}
+
+
+/*header 结束*/
+
+
+.banner {
+	width: 1160px;
+	margin: 80px auto 0;
+}
+
+.ico {
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	color: #fff;
+	font: 90px/120px icomoon;
+	text-align: center;
+}
+
+.search-div {
+	width: 430px;
+	margin: 40px auto 0;
+	
+}
+
+.search-div .upload {
+
+	display: block;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 40px;
+	color: rgba(255,255,255,.3);
+	border: 1px solid #1E2656;
+	background-color: #0F0F33;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	font: 18px/50px 微软雅黑;
+}
+
+.search-div .upload:hover {
+	border: 1px solid #6974B3;
+}
+			
+h3 {
+	margin-top: 50px;
+	color: #F2F2F4;
+	font: normal 400 14px tahoma ;
+	text-align: center;
+}
+			
+
+/*banner 结束*/
+
+
+.content {
+	padding-left: 53px;
+	margin: 140px 375px 135px;
+}
+
+.clearfix:after, .clearfix:before {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.content>div {
+	float: left;
+	width: 330px;
+	height: 330px;
+	background-color: #F9FFFF;
+	margin-right: 30px;
+	border-radius: 6px;
+}
+
+
+
+/*content 结束*/
+
+
+.footer {
+	background-color: rgba(8,7,30, .5);
+	padding: 0 375px 50px;
+}
+
+.footer .copy {
+	text-align: left;
+	color: #60606d;
+	font-family: tahoma;
+}
+
+.footer h3 {
+	text-align: left;
+	font-size: 18px;
+}
+
+.friend .tit {
+	padding: 50px 180px 20px 0;
+	font-size: 18px;
+	color: #60606d;
+	text-align: left;
+	
+}
+
+.friend a {
+	text-decoration: none;
+	color: #60606d;
+}
+
+.friend a:hover {
+	color: #B5B5BC;
+}
