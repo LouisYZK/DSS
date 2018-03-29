@@ -119,8 +119,9 @@ h3 {
 
 
 .content {
+	width: 1107px;
 	padding-left: 53px;
-	margin: 140px 375px 135px;
+	margin: 140px auto 135px;
 }
 
 .clearfix:after, .clearfix:before {
@@ -145,16 +146,23 @@ h3 {
 
 .footer {
 	background-color: rgba(8,7,30, .5);
-	padding: 0 375px 50px;
 }
 
-.footer .copy {
+.wrap {
+	
+	/*padding: 0 375px 50px;*/
+	width: 1160px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.wrap .copy {
 	text-align: left;
 	color: #60606d;
 	font-family: tahoma;
 }
 
-.footer h3 {
+.wrap h3 {
 	text-align: left;
 	font-size: 18px;
 }
