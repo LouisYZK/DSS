@@ -5,4 +5,6 @@ from django.template.loader import get_template
 def index(request):
     template = get_template('index.html')
     html = template.render()
-    return HttpResponse(html)
+    return HttpResponse(html)	
+def heello(request):
+	pass
